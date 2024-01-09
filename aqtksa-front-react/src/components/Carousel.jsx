@@ -31,6 +31,7 @@ const Carousel = () => {
 
 
   return (
+    <div className="mt-8">
     <div className="relative p-4">
     <Slider {...settings}>
       <div>
@@ -45,6 +46,7 @@ const Carousel = () => {
     </Slider>
       <ul className="flex justify-center mt-4">
         </ul>
+    </div>
     </div>
   );
 };
