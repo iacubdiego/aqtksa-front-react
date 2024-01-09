@@ -1,5 +1,6 @@
 // App.js
 import React from 'react';
+import Carousel from './components/Carousel';
 
 
 function App() {
@@ -41,7 +42,9 @@ function App() {
           {/* Aquí va el código para el carrusel de imágenes */}
         </div>
       </section>
-
+      <div className="mt-8">
+      <Carousel />
+      </div>
       {/* Footer */}
       <footer className="bg-gray-900 text-white">
         <div className="container mx-auto py-8">
