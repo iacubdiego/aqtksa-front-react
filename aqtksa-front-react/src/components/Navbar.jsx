@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from '../images/aqtksa_logo_solo.png'
 
 const Navbar = () => {
   return (
 <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
         <div className="flex items-center">
-          <img className="h-8 mr-4" src="logo.png" alt="Logo" />
-          <span className="font-bold text-lg">Mi Sitio</span>
+          <img className="h-8 mr-4" src={logo} alt="Logo" />
+          <span className="font-bold text-lg">AQTK</span>
         </div>
         <button className="text-white focus:outline-none lg:hidden">
           <svg

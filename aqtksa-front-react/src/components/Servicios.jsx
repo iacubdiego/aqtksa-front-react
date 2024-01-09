@@ -1,4 +1,5 @@
 import React from 'react';
+import banner_albedo from '../images/banner_albedo.png'
 
 const Servicios = () => {
   return (
@@ -7,7 +8,7 @@ const Servicios = () => {
         <div className="md:w-1/2">
           <img
             className="object-cover w-full h-64 md:h-auto md:rounded-l-lg"
-            src="imagen.jpg"
+            src={banner_albedo}
             alt="Imagen"
           />
         </div>
