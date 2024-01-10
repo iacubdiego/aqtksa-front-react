@@ -6,12 +6,14 @@ import Carousel from './components/Carousel';
 import Galeria from './components/Galeria';
 import Footer from './components/Footer';
 
-
 function App() {
   return (
     <div>
       {/* Navbar */}
       <Navbar />
+      <br></br>
+      <br></br>
+      <br></br>
       {/* Banner */}
       <Banner />
       {/* Carousel */}

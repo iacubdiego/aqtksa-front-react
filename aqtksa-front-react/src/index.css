@@ -2,6 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 /* Estilos generales de las flechas */
 .slick-arrow {
