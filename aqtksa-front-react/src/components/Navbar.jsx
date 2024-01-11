@@ -26,11 +26,22 @@ const Navbar = () => {
           <div id="menu__buttons" className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <a
-                  href="#contactos"
-                  className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
-                  aria-current="page"
+                  href="#productos"
+                  className="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                 >
-                  Contactos
+                  Productos
+                </a>
+                <a
+                  href="#servicio-tecnico"
+                  className="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                >
+                  Servicio Tecnico
+                </a>
+                <a
+                  href="#consultoria"
+                  className="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                >
+                  Consultoria
                 </a>
                 <a
                   href="#sobre-nosotros"
@@ -39,10 +50,11 @@ const Navbar = () => {
                   Sobre nosotros
                 </a>
                 <a
-                  href="#productos"
-                  className="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="#contactos"
+                  className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page"
                 >
-                  Productos
+                  Contactos
                 </a>
               </div>
             </div>

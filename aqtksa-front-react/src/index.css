@@ -1,6 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+/* @import "glidejs/glide"; */
+/* @import "node_modules/@glidejs/glide/src/assets/sass/glide.core"; */
 
 body {
   font-family: 'Roboto', sans-serif;
