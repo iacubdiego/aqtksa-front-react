@@ -16,6 +16,7 @@ const products = [
     title: 'LanXPLORER',
     description: 'In-Line network tester for LAN management with active and passive troubleshooting capabilities for Ethernet connectivity and cabling issues in multi-media environments including copper,fibre and WiFi.',
     brand: 'Ideal',
+    brandbaner: "{banner_oscilloquartz}",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const products = [
     title: 'Power Meter',
     description: 'Maximum input 600Vrms and 20Arms. Bandwidth 100KHZ. Voltage, Current, Power, Frequency, Harmonics. USB, GPIB, RS232, LAN remote control.',
     brand: 'Itech',
+    brandbaner: {banner_keysight},
   },
   {
     id: 3,
@@ -30,6 +32,8 @@ const products = [
     title: 'Signal Generators',
     description: 'Keysight offers the widest selection of baseband, RF, and microwave signal generator products from baseband to 67 GHz.',
     brand: 'Keysight',
+    brandbaner: {banner_keysight},
+
   },
   {
     id: 4,
@@ -103,7 +107,6 @@ const Galeria = () => {
       <option value="">Todos</option>
       <option value="Ideal">Ideal</option>
       <option value="Keysight">Keysight</option>
-      {/* Agrega más opciones de marca aquí */}
     </select>
     <input
       type="text"

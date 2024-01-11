@@ -6,6 +6,7 @@ import Carousel from './components/Carousel';
 import CarouselLogo from './components/CarouselLogo';
 import Galeria from './components/Galeria';
 import Footer from './components/Footer';
+import Feature from './components/Feature';
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
       <br></br>
       {/* Banner */}
       <Banner />
-      {/* Carousel */}
-      <Carousel />
+      {/* Feature */}
+      <Feature />      
       {/* CarouselLogo */}
       <CarouselLogo />
+      {/* Carousel */}
+      <Carousel />
       {/* Galeria */}
       <Galeria />
       {/* Footer */}

@@ -13,5 +13,6 @@ const Banner = () => {
       <p className="text-lg text-white">Encuentra las mejores soluciones en telecomunicaciones</p>
     </div>    </div>
   </div>
+
 </section>  )}
   export default Banner;
