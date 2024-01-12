@@ -6,7 +6,7 @@ import producto_itech_LED_High_Power from '../images/producto_itech_LED_High_Pow
 
 
 
-import banner_oscilloquartz from '../images/banner_oscilloquartz.png'
+// import banner_oscilloquartz from '../images/banner_oscilloquartz.png'
 import banner_keysight from '../images/banner_keysight.png'
 
 const products = [

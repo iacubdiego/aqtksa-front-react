@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Servicios from './Servicios';
+import ServiciosReparacion from './ServiciosReparacion';
+import ServiciosConsultoria from './ServiciosConsultoria';
+import ServiciosProductos from './ServiciosProductos';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -22,7 +24,9 @@ const Carousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false, // Habilitar las flechas de navegación
@@ -36,13 +40,13 @@ const Carousel = () => {
     <div className="relative p-4">
     <Slider {...settings}>
       <div>
-        <Servicios />
+        <ServiciosReparacion />
       </div>
       <div>
-        <Servicios />
+        <ServiciosConsultoria />
       </div>
       <div>
-        <Servicios />
+        <ServiciosProductos />
       </div>
     </Slider>
       <ul className="flex justify-center p-2 mt-4 space-x-4">

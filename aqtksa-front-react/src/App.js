@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Carousel from './components/Carousel';
+// import CarouselServicios from './components/CarouselServicios';
 import CarouselLogo from './components/CarouselLogo';
 import Galeria from './components/Galeria';
 import Footer from './components/Footer';
@@ -18,10 +19,10 @@ function App() {
       <br></br>
       {/* Banner */}
       <Banner />
-      {/* Feature */}
-      <Feature />      
       {/* CarouselLogo */}
       <CarouselLogo />
+      {/* Feature */}
+      <Feature />      
       {/* Carousel */}
       <Carousel />
       {/* Galeria */}
