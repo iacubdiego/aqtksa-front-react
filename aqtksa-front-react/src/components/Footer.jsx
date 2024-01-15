@@ -58,7 +58,7 @@ const Footer = () => {
                 <ul className="flex flex-wrap items-center justify-end gap-2 lg:gap-4">
                   <li className="leading-6">
                     <a
-                      href="javascript:void(0)"
+                      href="#T&C"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       T&C
@@ -66,7 +66,7 @@ const Footer = () => {
                   </li>
                   <li className="leading-6">
                     <a
-                      href="javascript:void(0)"
+                      href="#Privacy"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       Privacy
@@ -74,7 +74,7 @@ const Footer = () => {
                   </li>
                   <li className="leading-6">
                     <a
-                      href="javascript:void(0)"
+                      href="#Cookies"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       Cookies
