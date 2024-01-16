@@ -6,9 +6,9 @@ import { ReactComponent as ProductIcon } from '../images/icons/product.svg';
 
 const Feature = () => {
     return (
-<div className="grid p-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border border-gray-300 rounded-md shadow-md">
       {/* Columna 1 */}
-      <div className="bg-gray-100 p-2">
+      <div className="bg-gray-100 p-4">
       <div className="flex p-4 flex-col items-center gap-4 text-center">
         <div className="flex items-center text-emerald-500">
           
@@ -39,7 +39,7 @@ const Feature = () => {
       </div>
       </div>
       {/* Columna 2 */}
-      <div className="bg-gray-100 p-2">
+      <div className="bg-gray-100 p-4">
       <div className="flex p-3 flex-col items-center gap-4 text-center">
         <div className="flex items-center text-emerald-500">
         <ConsultIcon
@@ -68,7 +68,7 @@ const Feature = () => {
       </div>
       </div>
       {/* Columna 3 */}
-      <div className="bg-gray-100 p-2">
+      <div className="bg-gray-100 p-4">
       <div className="flex p-4 flex-col items-center gap-4 text-center">
         <div className="flex items-center text-emerald-500">
         <ProductIcon
@@ -87,7 +87,7 @@ const Feature = () => {
             />
           
         </div>
-        <div className="flex w-full min-w-0 flex-col items-center justify-center gap-0 text-base">
+        <div className="flex w-full min-w-0 flex-col items-center justify-center gap-0 text-base ">
           <p className="text-slate-500">
             <strong className="font-large text-slate-700">
               Productos:

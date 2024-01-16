@@ -47,7 +47,7 @@ export default function CarouselLogo() {
         <div data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
             <li>
-            <img src={producto_logo_ideal} alt="producto_logo_ideal" className="m-auto h-20 max-h-full w-auto max-w-full" />
+            <img src={producto_logo_ideal} alt="producto_logo_ideal" className="m-auto h-16 max-h-full w-auto max-w-full" />
 
               {/* <img
                 src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-1.svg"
@@ -55,23 +55,23 @@ export default function CarouselLogo() {
               /> */}
             </li>
             <li>
-            <img src={producto_logo_albedo} alt="producto_logo_albedo" className="m-auto h-20 max-h-full w-auto max-w-full" />
+            <img src={producto_logo_albedo} alt="producto_logo_albedo" className="m-auto h-16 max-h-full w-auto max-w-full" />
 
             </li>
             <li>
-            <img src={producto_logo_itech} alt="producto_logo_itech" className="m-auto h-20 max-h-full w-auto max-w-full" />
+            <img src={producto_logo_itech} alt="producto_logo_itech" className="m-auto h-16 max-h-full w-auto max-w-full" />
 
             </li>
             <li>
-            <img src={producto_logo_ixia} alt="producto_logo_ixia" className="m-auto h-20 max-h-full w-auto max-w-full" />
+            <img src={producto_logo_ixia} alt="producto_logo_ixia" className="m-auto h-16 max-h-full w-auto max-w-full" />
 
             </li>
             <li>
-            <img src={producto_logo_keysight} alt="producto_logo_keysight" className="m-auto h-20 max-h-full w-auto max-w-full" />
+            <img src={producto_logo_keysight} alt="producto_logo_keysight" className="m-auto h-16 max-h-full w-auto max-w-full" />
 
             </li>
             <li>
-            <img src={producto_logo_oscillo} alt="producto_logo_oscillo" className="m-auto h-20 max-h-full w-auto max-w-full" />
+            <img src={producto_logo_oscillo} alt="producto_logo_oscillo" className="m-auto h-16 max-h-full w-auto max-w-full" />
 
             </li>
           </ul>

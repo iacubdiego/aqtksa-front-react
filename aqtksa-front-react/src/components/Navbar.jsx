@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import { Link, Route } from "wouter";
+
 import logo from '../images/aqtksa_logo_solo.png'
 
-export default function Navbar2() {
+export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
 
   return (
@@ -15,9 +17,11 @@ export default function Navbar2() {
             role="navigation"
           >
             {/*      <!-- Brand logo --> */}
-            <div className="flex items-center">
+          <div className="flex items-center">
+          <Link href="/">
           <img className="h-8 mr-4" src={logo} alt="Logo" />
           <span className="font-bold text-lg">AQTK</span>
+          </Link>
         </div>
         
             {/*      <!-- Mobile trigger --> */}
@@ -59,6 +63,7 @@ export default function Navbar2() {
               }`}
             >
               <li role="none" className="flex items-stretch">
+              <Link href="/serviciotecnico">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
@@ -67,8 +72,10 @@ export default function Navbar2() {
                 >
                   <span>Servicio Técnico</span>
                 </a>
+                </Link>
               </li>
               <li role="none" className="flex items-stretch">
+                <Link href="/consultoría">
                 <a
                   role="menuitem"
                   aria-current="page"
@@ -78,8 +85,11 @@ export default function Navbar2() {
                 >
                   <span>Consultoría</span>
                 </a>
+                </Link>
+
               </li>
               <li role="none" className="flex items-stretch">
+                <Link href="/nosotros">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
@@ -88,8 +98,10 @@ export default function Navbar2() {
                 >
                   <span>Sobre nosotros</span>
                 </a>
+              </Link>
               </li>
               <li role="none" className="flex items-stretch">
+              <Link href="/Contactos">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
@@ -98,6 +110,7 @@ export default function Navbar2() {
                 >
                   <span>Contactos</span>
                 </a>
+              </Link>
               </li>
             </ul>
           </nav>

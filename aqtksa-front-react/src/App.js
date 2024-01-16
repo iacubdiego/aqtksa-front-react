@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, Route } from "wouter";
+
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
@@ -14,8 +16,6 @@ function App() {
     <div>
       {/* Navbar */}
       <Navbar />
-      <br></br>
-      <br></br>
       <br></br>
       {/* Banner */}
       <Banner />

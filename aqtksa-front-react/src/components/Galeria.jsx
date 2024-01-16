@@ -66,6 +66,9 @@ const products = [
   // Agrega más productos aquí
 ];
 
+
+
+
 const Galeria = () => {
   const [selectedBrand, setSelectedBrand] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -119,15 +122,15 @@ const Galeria = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
   {filteredProducts.map((product) => (
     <div key={product.id} className="border border-gray-300 rounded-md p-4 shadow-md">
-      <div className="aspect-w-3 aspect-h-2">
+      <div className="aspect-w-3 aspect-h-2 items-center justify-center">
         <img src={product.image} alt={product.title} className="object-cover rounded-md" />
       </div>
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-2">{product.title}</h3>
         <p className="text-gray-600">{product.description}</p>
-        <div className="mt-4">
+        {/* <div className="mt-4">
           <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Add to Cart</button>
-        </div>
+        </div> */}
       </div>
     </div>
   ))}
