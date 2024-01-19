@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import producto_ideal_lanxpolore from '../images/producto_ideal_lanxplorer.png'
 import producto_key_signal from '../images/producto_key_signal.png'
 import producto_itech_Power_Meter from '../images/producto_itech_Power_Meter.png'

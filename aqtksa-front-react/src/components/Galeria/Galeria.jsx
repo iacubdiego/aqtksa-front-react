@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import producto_ideal_lanxpolore from '../images/producto_ideal_lanxplorer.png'
-import producto_key_signal from '../images/producto_key_signal.png'
-import producto_itech_Power_Meter from '../images/producto_itech_Power_Meter.png'
-import producto_itech_LED_High_Power from '../images/producto_itech_LED_High_Power.png'
+import producto_ideal_lanxpolore from '../../images/producto_ideal_lanxplorer.png'
+import producto_key_signal from '../../images/producto_key_signal.png'
+import producto_itech_Power_Meter from '../../images/producto_itech_Power_Meter.png'
+import producto_itech_LED_High_Power from '../../images/producto_itech_LED_High_Power.png'
 
 
 
 // import banner_oscilloquartz from '../images/banner_oscilloquartz.png'
-import banner_keysight from '../images/banner_keysight.png'
+import banner_keysight from "../../images/banner_keysight.png"
 
 const products = [
   {

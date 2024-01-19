@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link, Route } from "wouter";
+// import { Link, Route, Switch } from "wouter";
+// import Nosotros from "./pages/Nosotros"
 
-// import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Carousel from './components/Carousel';
-// import CarouselServicios from './components/CarouselServicios';
 import CarouselLogo from './components/CarouselLogo';
-import Galeria from './components/Galeria';
+import Galeria from './components/Galeria/Galeria';
 import Footer from './components/Footer';
 import Feature from './components/Feature';
 
@@ -16,7 +15,6 @@ function App() {
     <div>
       {/* Navbar */}
       <Navbar />
-      <br></br>
       {/* Banner */}
       <Banner />
       {/* CarouselLogo */}

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link, Route } from "wouter";
+import { Link } from "wouter";
 
 import logo from '../images/aqtksa_logo_solo.png'
 
@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       {/*<!-- Component: Basic Navbar --> */}
-      <header className="border-b-1 bg-gray-100 fixed z-20 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
+      <header className="border-b-1 bg-gray-100 sticky top-0 inset-x-0 z-50 border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
             aria-label="main navigation"
