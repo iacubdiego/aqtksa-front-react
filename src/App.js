@@ -4,7 +4,7 @@ import React from 'react';
 
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
-import Carousel from './components/Carousel';
+import Carousel from './components/CarouselServicios/Carousel';
 import CarouselLogo from './components/CarouselLogo';
 import Galeria from './components/Galeria/Galeria';
 import Footer from './components/Footer';

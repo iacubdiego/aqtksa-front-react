@@ -8,25 +8,24 @@ export default function Navbar() {
 
   return (
     <>
-      {/*<!-- Component: Basic Navbar --> */}
       <header className="border-b-1 bg-gray-100 sticky top-0 inset-x-0 z-50 border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
             aria-label="main navigation"
-            className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
+            className="flex h-[3rem] items-stretch justify-between font-medium text-slate-700"
             role="navigation"
           >
             {/*      <!-- Brand logo --> */}
           <div className="flex items-center">
-          <Link href="/">
-          <img className="h-8 mr-4" src={logo} alt="Logo" />
+          <Link href="/" className="flex items-center">
+          <img className="h-8 mr-2" src={logo} alt="Logo" />
           <span className="font-bold text-lg">AQTK</span>
           </Link>
         </div>
         
             {/*      <!-- Mobile trigger --> */}
             <button
-              className={`relative order-10 block h-10 w-10 self-center lg:hidden
+              className={`relative order-10 block h-10 w-10 self-center md:hidden
                 ${
                   isToggleOpen
                     ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(3)]:w-0 [&_span:nth-child(2)]:-rotate-45 "
@@ -56,7 +55,7 @@ export default function Navbar() {
             <ul
               role="menubar"
               aria-label="Select page"
-              className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
+              className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 md:visible md:relative md:top-0  md:z-0 md:flex md:h-full md:w-auto md:items-stretch md:overflow-visible md:bg-white/0 md:px-0 md:py-0  md:pt-0 md:opacity-100 ${
                 isToggleOpen
                   ? "visible opacity-100 backdrop-blur-sm"
                   : "invisible opacity-0"
@@ -67,7 +66,7 @@ export default function Navbar() {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#productos"
                 >
                   <span>Servicio Técnico</span>
@@ -80,7 +79,7 @@ export default function Navbar() {
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4  transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-4  transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#consultoria"
                 >
                   <span>Consultoría</span>
@@ -93,7 +92,7 @@ export default function Navbar() {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#sobre-nosotros"
                 >
                   <span>Sobre nosotros</span>
@@ -105,7 +104,7 @@ export default function Navbar() {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 text-emerald-500 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-4 text-red-500 transition-colors duration-300 hover:text-red-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#contactos"
                 >
                   <span>Contactos</span>
@@ -116,7 +115,6 @@ export default function Navbar() {
           </nav>
         </div>
       </header>
-      {/*<!-- End Basic Navbar--> */}
     </>
   )
 }
