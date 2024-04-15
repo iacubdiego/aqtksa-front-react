@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "wouter";
 
-import logo from '../images/aqtksa_logo_solo.png'
+import logo from '../images/aqtksa_logo.png'
+import Dropdown from "./Dropdown";
 
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
@@ -12,14 +13,13 @@ export default function Navbar() {
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
             aria-label="main navigation"
-            className="flex h-[3rem] items-stretch justify-between font-medium text-slate-700"
+            className="flex h-[4rem] items-stretch justify-between font-medium text-slate-700"
             role="navigation"
           >
             {/*      <!-- Brand logo --> */}
           <div className="flex items-center">
           <Link href="/" className="flex items-center">
-          <img className="h-8 mr-2" src={logo} alt="Logo" />
-          <span className="font-bold text-lg">AQTK</span>
+          <img className="h-12 mr-2 mb-2 mt-4" src={logo} alt="Logo" />
           </Link>
         </div>
         
@@ -62,11 +62,23 @@ export default function Navbar() {
               }`}
             >
               <li role="none" className="flex items-stretch">
+              <Link href="/productos">
+                <a
+                  role="menuitem"
+                  aria-haspopup="false"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-400 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  href="#productos"
+                >
+                  <span>Productos</span>
+                </a>
+                </Link>
+              </li>
+              <li role="none" className="flex items-stretch">
               <Link href="/serviciotecnico">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#productos"
                 >
                   <span>Servicio Técnico</span>
@@ -79,10 +91,25 @@ export default function Navbar() {
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4  transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  className="flex items-center gap-2 py-4  transition-colors duration-300 hover:text-red-600 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#consultoria"
                 >
                   <span>Consultoría</span>
+                </a>
+                </Link>
+
+              </li>
+              <li role="none" className="flex items-stretch">
+                <Link href="/marcas">
+                <a
+                  role="menuitem"
+                  aria-current="page"
+                  aria-haspopup="false"
+                  className="flex items-center gap-2 py-4  transition-colors duration-300 hover:text-red-600 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  href="#consultoria"
+                >
+                  {/* <span>Marcas</span> */}
+              <Dropdown></Dropdown>
                 </a>
                 </Link>
 
@@ -92,10 +119,10 @@ export default function Navbar() {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#sobre-nosotros"
                 >
-                  <span>Sobre nosotros</span>
+                  <span>Sobre Nosotros</span>
                 </a>
               </Link>
               </li>
@@ -104,7 +131,7 @@ export default function Navbar() {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 text-red-500 transition-colors duration-300 hover:text-red-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  className="flex items-center gap-2 py-4 text-red-500 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#contactos"
                 >
                   <span>Contactos</span>

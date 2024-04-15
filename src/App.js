@@ -1,31 +1,26 @@
 import React from 'react';
-// import { Link, Route, Switch } from "wouter";
-// import Nosotros from "./pages/Nosotros"
+import { Router, Route } from "wouter";
+
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Productos from "./pages/Productos";
+import Nosotros from './pages/Nosotros';
 
 import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import Carousel from './components/CarouselServicios/Carousel';
-import CarouselLogo from './components/CarouselLogo';
-import Galeria from './components/Galeria/Galeria';
 import Footer from './components/Footer';
-import Feature from './components/Feature';
 
 function App() {
   return (
     <div>
       {/* Navbar */}
       <Navbar />
-      {/* Banner */}
-      <Banner />
-      {/* CarouselLogo */}
-      <CarouselLogo />
-      {/* Feature */}
-      <Feature />      
-      {/* Carousel */}
-      <Carousel />
-      {/* Galeria */}
-      <Galeria />
-      {/* Footer */}
+      <Router>
+        <Route path="/" component={Home} />
+        <Route path="/productos" component={Productos} />
+        <Route path="/nosotros" component={Nosotros} />
+        <Route path="/*" component={Error} />
+      </Router>
+
       <Footer />
     </div>
   );

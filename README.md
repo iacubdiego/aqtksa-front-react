@@ -1,3 +1,46 @@
+## REQUERIMIENTOS 15/04
+
+Mariela:
+# Estilo
+* - Cambiar las imágenes por fotos reales y con color al igual que los instrumentos. Ya que no dan calidez visual.
+* - El banner es oscuro y no resalta, poco llamativo.
+* - El logo pasa inadvertido y debería ser parte de la identidad visual de AQTK. 
+** (agregue el logo en el banner pero no tengo claro si el pedido era ese u otro)
+# Mejora
+- Generar un botón para WhatsApp.
+- Un mail único de recepción de link directo.
+# Productos
+- Hay un listado de stock de ventas, hay que valorizar para armar lista de stock para subir a mercado libre.
+
+Roberto:
+# Estilo
+* - Logo de AQTK de arriba de todo a la izquierda, que sea igual al que esta abajo de todo a la izquierda
+* - Frase AQTK encuentra las mejores soluciones en telecomunicaciones. Limita bastante
+Pondría algo así como: 
+AQTK encuentra las mejores soluciones en:
+-Telecomunicaciones
+-Electrónica en general
+-Industria
+# Mejora
+- Es lento mostrar las marcas que distribuimos así en una tira dinámica, lo mejor es colocar otra etiqueta arriba a la derecha que diga:
+Marcas y ahí poner todos los logos de las marcas
+Productos            Servicio Técnico                Consultoría         Marcas                 Sobre Nosotros                 Contactos
+Y además pondría un tamaño más grande para las marcas con las cuales tengamos contrato. Por ejemplo Keysigth; Oscilloquartz; etc.
+
+-En el medio de la página donde se encuentran 3 descripciones de servicio técnico, consultoría y productos, sacarlo y colocar directamente 
+cuando la página te redirecciona por las etiquetas que se encuentran arriba a la derecha.
+-La etiqueta que dice consultoría ver más, sacar. Directamente se va por las etiquetas de arriba.
+-Logo debajo correcto.
+
+Juan:
+# Productos
+-Arriba de todo (Servicio Técnico, Consultoría, Sobre Nosotros, Contactos) entre esas opciones agregar una que diga Productos y que nos
+derive a una pestaña con todos los equipos que contamos para poder comercializar.
+-Con respecto a las especificaciones de los equipos, en la página actual al seleccionar cualquier producto nos deriva directamente a la página de Keysight. 
+Como preferencia que toda la información de los equipos este dentro de la página de AQTK.
+# Mejora
+-Una de las ideas es incorporar en nuestra página web algunos links de los productos que tendríamos publicado en Mercado Libre como secundarios. Serían con los que contamos con stock inmediato.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
