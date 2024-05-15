@@ -7,6 +7,10 @@ import Dropdown from "./Dropdown";
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
 
+  const handleLinkClick = () => {
+    setIsToggleOpen(false);
+  };
+
   return (
     <>
       <header className="border-b-1 bg-gray-100 sticky top-0 inset-x-0 z-50 border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
@@ -60,38 +64,27 @@ export default function Navbar() {
                   ? "visible opacity-100 backdrop-blur-sm"
                   : "invisible opacity-0"
               }`}
+              onClick={() => setIsToggleOpen(!isToggleOpen)}
             >
-              <li role="none" className="flex items-stretch">
-              <Link href="/productos">
-                <a
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-400 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
-                  href="#productos"
-                >
-                  <span>Productos</span>
-                </a>
-                </Link>
-              </li>
               <li role="none" className="flex items-stretch">
               <Link href="/serviciotecnico">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
-                  href="#productos"
+                  className="text-sm flex items-center gap-1 py-4 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  href="#serviciotecnico"
                 >
                   <span>Servicio Técnico</span>
                 </a>
                 </Link>
               </li>
               <li role="none" className="flex items-stretch">
-                <Link href="/consultoría">
+                <Link href="/consultoria">
                 <a
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4  transition-colors duration-300 hover:text-red-600 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  className="text-sm flex items-center gap-2 py-4  transition-colors duration-300 hover:text-red-600 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#consultoria"
                 >
                   <span>Consultoría</span>
@@ -100,13 +93,25 @@ export default function Navbar() {
 
               </li>
               <li role="none" className="flex items-stretch">
+              <Link href="/productos">
+                <a
+                  role="menuitem"
+                  aria-haspopup="false"
+                  className="text-sm flex items-center gap-1 py-4 transition-colors duration-300 hover:text-red-400 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  href="#productos"
+                >
+                  <span>Productos</span>
+                </a>
+                </Link>
+              </li>
+              <li role="none" className="flex items-stretch">
                 <Link href="/marcas">
                 <a
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4  transition-colors duration-300 hover:text-red-600 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
-                  href="#consultoria"
+                  className="text-sm flex items-center gap-2 py-4  transition-colors duration-300 hover:text-red-600 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  href="#marcas"
                 >
                   {/* <span>Marcas</span> */}
               <Dropdown></Dropdown>
@@ -119,22 +124,11 @@ export default function Navbar() {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
+                  className="text-red-400 text-sm flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
                   href="#sobre-nosotros"
+                  onClick={handleLinkClick}
                 >
                   <span>Sobre Nosotros</span>
-                </a>
-              </Link>
-              </li>
-              <li role="none" className="flex items-stretch">
-              <Link href="/Contactos">
-                <a
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 text-red-500 transition-colors duration-300 hover:text-red-500 focus:text-red-600 focus:outline-none focus-visible:outline-none md:px-6"
-                  href="#contactos"
-                >
-                  <span>Contactos</span>
                 </a>
               </Link>
               </li>

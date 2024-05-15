@@ -1,4 +1,8 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
+.whatsapp-icon {
+  @apply fixed bottom-4 left-4 z-50 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-xl cursor-pointer;
+}
 
 .App {
   text-align: center;

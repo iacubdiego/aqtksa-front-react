@@ -1,6 +1,6 @@
 import React from 'react';
 // import banner_principal from '../images/banner_horizontal_principal.png'
-import banner_horizontal from '../images/banner_horizontal_new2.png'
+import banner_horizontal from '../images/banner_horizontal_grey.png'
 
 
 const Banner = () => {

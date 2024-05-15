@@ -33,16 +33,16 @@ const Footer = () => {
       <h2 className="text-lg font-bold mb-4">CONTACTO:</h2>
       <ul className="list-none">
         <li className="mb-1">
-          <a href="#inicio" className="hover:text-gray-400">Av. Cramer 1765 Piso 7 Of. "A"</a>
+          <a href="#inicio" className="hover:text-gray-400">Av. Cramer 1765 Piso 7 "A"</a>
         </li>
         <li className="mb-1">
           <a href="#inicio" className="hover:text-gray-400">C.A.B.A - Argentina</a>
         </li>
         <li className="mb-1">
-          <a href="#inicio" className="hover:text-gray-400">Tel: (54 11) 4783-0776</a>
+          <a href="#inicio" className="hover:text-gray-400">(54 11) 4783-0776</a>
         </li>
         <li className="mb-1">
-          <a href="#inicio" className="hover:text-gray-400">Mail: consultas@aqtk.com.ar</a>
+          <a href="#inicio" className="hover:text-gray-400">consultas@aqtk.com.ar</a>
         </li>
       </ul>
       {/* Contenido de la segunda columna del footer */}
