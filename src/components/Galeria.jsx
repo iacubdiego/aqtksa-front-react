@@ -112,52 +112,46 @@ const Galeria = () => {
           className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
         />
       </div>
-      <div className="flex flex-wrap gap-2 justify-center p-4">
-        {filteredProducts.map((product) => (
-          <div
-            key={product.id}
-            className="border border-gray-300 rounded-md p-2 shadow-md w-[200px]"
-          >
-            <div className="aspect-w-3 aspect-h-2">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="object-cover rounded-md w-full h-full shadow-md"
-              />
-            </div>
-            <div className="mt-4">
-              <h3 className="text-lg font-semibold mb-2 line-clamp-3">
-                {product.title}
-              </h3>
-              <p className="text-gray-600 line-clamp-3">
-                {product.description}
-              </p>
-              <div className="flex justify-end m-2">
-                <button className="p-2 bg-gray-100 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded text-sm md:text-base lg:text-md tracking-wide shadow-xl shadow-grey-200">
-                  <a
-                    href="https://articulo.mercadolibre.com.ar/MLA-1400485671-osciloscopio-20-mhz-doble-canal-gen-func-1-mhz-2-en-1-_JM#position=5&search_layout=stack&type=item&tracking_id=62004a24-28ef-4901-b0d6-c29883083579"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=""
-                  >
-                    <div className="flex gap-2 inline-flex items-center justify-center">
-                      <span className="text-sm md:text-xl lg:text-1xl font-bold">
-                        Ver en
-                      </span>
-                      <img
-                        src={logoMercado}
-                        alt={logoMercado}
-                        className="object-cover rounded-md w-full h-8 shadow-md"
-                      />
-                    </div>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
+
+      <div className="flex flex-wrap gap-2 justify-center p-4 pb-0">
+  {filteredProducts.map((product) => (
+    <div
+      key={product.id}
+      className="border border-gray-300 rounded-md p-2 shadow-md w-[200px] flex flex-col justify-between"
+    >
+      <div className="aspect-w-3 aspect-h-2">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="object-cover rounded-md w-full h-full shadow-md"
+        />
+      </div>
+      <div className="mt-4 flex-grow">
+        <h3 className="text-lg font-semibold mb-2 line-clamp-3">
+          {product.title}
+        </h3>
+        <p className="text-gray-600 line-clamp-3">{product.description}</p>
+      </div>
+      <div className="flex flex-row justify-end gap-2 py-0">
+        <a
+          href="https://articulo.mercadolibre.com.ar/MLA-1400485671-osciloscopio-20-mhz-doble-canal-gen-func-1-mhz-2-en-1-_JM#position=5&search_layout=stack&type=item&tracking_id=62004a24-28ef-4901-b0d6-c29883083579"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="self-end"
+        >
+          <button className="inline-flex h-10 items-end justify-center gap-2 justify-self-center whitespace-nowrap rounded px-5 text-sm font-medium tracking-wide text-gray-500 transition duration-300 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-200 focus:text-gray-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:text-gray-300 disabled:shadow-none disabled:hover:bg-transparent">
+            <span>Ver en</span>
+            <img
+              src={logoMercado}
+              alt={logoMercado}
+              className="object-cover rounded-md w-full h-8 shadow-md"
+            />
+          </button>
+        </a>
       </div>
     </div>
+  ))}
+</div>    </div>
   );
 };
 
